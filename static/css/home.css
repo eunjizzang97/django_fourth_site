@@ -1,0 +1,17 @@
+div#content_home {
+    position: absolute;
+    top: 180px;
+    left: 110px;
+    right: 110px;
+    background-color: #000;
+}
+
+div#homeimg {
+    background: #000;
+    text-align: center;
+}
+
+/*div#hometxt{*/
+    /*color: mediumpurple;*/
+    /*text-align:right;*/
+/*}*/
