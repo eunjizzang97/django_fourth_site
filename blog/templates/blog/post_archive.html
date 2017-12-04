@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}post_archive.html{% endblock %}
+{% block title %}7조의 장고 홈페이지입니다.{% endblock %}
 
 {% block content %}
 <div id="content">
@@ -14,14 +14,28 @@
 </ul>
 <br/>
 
-<div>
-    <ul>
-        {% for post in object_list %}
-        <li>{{ post.modify_date|date:"Y-m-d" }}&nbsp;&nbsp;&nbsp;
-        <a href="{{ post.get_absolute_url }}"><strong>{{ post.title }}</strong></a></li>
-        {% endfor %}
-    </ul>
-</div>
+<table class="architect">
+    <tr>
+        <th>날짜</th>
+        <th>제목</th>
+    </tr>
+
+    {% for post in object_list %}
+        <tr>
+            <td>{{ post.modify_date|date:"Y-m-d" }}</td>
+            <td><a href="{{ post.get_absolute_url }}"><strong>{{ post.title }}</strong></a></td>
+        </tr>
+    {% endfor %}
+</table>
+
+{#<div>#}
+{#    <ul>#}
+{#        {% for post in object_list %}#}
+{#        <li>{{ post.modify_date|date:"Y-m-d" }}&nbsp;&nbsp;&nbsp;#}
+{#        <a href="{{ post.get_absolute_url }}"><strong>{{ post.title }}</strong></a></li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{#</div>#}
 
 </div>
 {% endblock %}

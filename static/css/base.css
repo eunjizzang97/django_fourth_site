@@ -1,8 +1,4 @@
-body {
-    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
-    font-size: 14px;
-
-}
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 
 /* PAGE STRUCTURE */
 div#header {
@@ -179,5 +175,37 @@ td, th {
 
 table.change-list, table.change-list th, table.change-list td {
     border: 1px solid #8686f1;
+    padding:5px;
 }
 
+table.change-list th{
+    text-align:center;
+    color: #f4f4f4;
+    font-size: 16px;
+}
+
+table.change-list td, table.change-list td a{
+    text-align:center;
+    color: #f4f4f4;
+}
+
+table.architect, table.architect th, table.architect td {
+    border: 1px solid #8686f1;
+    padding:5px;
+}
+
+table.architect th{
+    text-align:center;
+    color: #eaeaea;
+    font-size: 16px;
+}
+
+table.architect td, table.architect td a{
+    text-align:center;
+    color: #eaeaea;
+}
+
+body {
+    font-family: 'Hanna', sans-serif;
+    font-size: 14px;
+}
