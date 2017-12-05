@@ -1,15 +1,27 @@
 {% extends "base.html" %}
 
-{% block title %}Django Bookmark List{% endblock %}
+{% block title %}7조의 장고 홈페이지입니다.{% endblock %}
 
 {% block content %}
 <div id="content">
     <h1>북마크 목록</h1>
 
-    <ul>
+    <table class="change-list">
+        <tr>
+            <th>북마크 제목</th>
+        </tr>
+
         {% for bookmark in object_list %}
-            <li><a href="{% url 'bookmark:detail' bookmark.id %}">{{ bookmark }}</a></li>
+        <tr>
+            <td><a href="{% url 'bookmark:detail' bookmark.id %}">{{ bookmark }}</a></td>
+        </tr>
         {% endfor %}
-    </ul>
+    </table>
+
+{#    <ul>#}
+{#        {% for bookmark in object_list %}#}
+{#            <li><a href="{% url 'bookmark:detail' bookmark.id %}">{{ bookmark }}</a></li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
 </div>
 {% endblock %}

@@ -1,5 +1,11 @@
 @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 
+body {
+    /*font-family: "Lucida Grande", Verdana, Arial, sans-serif;*/
+    font-size: 14px;
+    font-family: 'Hanna', sans-serif;
+}
+
 /* PAGE STRUCTURE */
 div#header {
     position: absolute;
@@ -9,6 +15,7 @@ div#header {
     width: 100%;
     display: table;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg");
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu {
@@ -24,13 +31,31 @@ div#menu {
     background: black;
     font-size: 13px;
     border-bottom: solid 2px #5d5d5d;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#content {
     position: absolute;
-    top: 70px;
+    top: 220px;
     left: 50px;
     right: 50px;
+    font-family: 'Hanna', sans-serif;
+}
+
+div#content h1{
+    /*color: #cfceda;*/
+    color: #4648bf;
+    font-family: 'Hanna', sans-serif;
+}
+
+div#content p{
+    color: #cfceda;
+    font-family: 'Hanna', sans-serif;
+}
+
+div#content h4{
+    color: #cfceda;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#footer {
@@ -42,6 +67,7 @@ div#footer {
     height: 30px;
     /*border-top:1px solid #5926cc;*/
     color: #9baec8;
+    font-family: 'Hanna', sans-serif;
 }
 
 /* HEADER */
@@ -50,10 +76,9 @@ div#footer {
     vertical-align: middle;
     padding-left: 20px;
     color: #ffc;
-
     font-weight: bold;
     font-size: 16px;
-
+    font-family: 'Hanna', sans-serif;
 }
 
 .welcome {
@@ -64,15 +89,18 @@ div#footer {
     color: #9baec8;
     font-weight: bold;
     font-size: 12px;
+    font-family: 'Hanna', sans-serif;
 }
 
 .welcome a:link, .welcome a:visited {
     color: white;
+    font-family: 'Hanna', sans-serif;
 }
 
 /* MENU */
 div#menu a:link, div#menu a:visited {
     color: #ffffff;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu > li {
@@ -82,6 +110,7 @@ div#menu > li {
     border-radius: 25px;
     text-align: center;
     font-weight: bold;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu li{ /* 드롭다운 메뉴가 바뀌었넼ㅋㅋㅋㅋ*/
@@ -90,10 +119,12 @@ div#menu li{ /* 드롭다운 메뉴가 바뀌었넼ㅋㅋㅋㅋ*/
     /*border-radius: 25px;*/
     text-align: center;
     font-weight: bold;
+    font-family: 'Hanna', sans-serif;
 }
 
 li{ /*이것도 내가 추가*/
     color: #4f44b1;
+    font-family: 'Hanna', sans-serif;
 }
 
 /* pulldown menu */
@@ -101,22 +132,28 @@ div#menu li  ul {
     display:none;
     position:absolute;
     margin: 0;
-    padding:10px 10px 5px 10px;
+    /*padding:10px 10px 5px 10px;*/
+    padding:0px 0px;
     list-style:none;
     /*border-right: 1px solid #8ea0f9;*/
     /*border-left: 1px solid #8ea0f9;*/
     border-bottom: 1px solid #ccc;
     background: #9baec8;
     z-index: 1;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu li:hover ul {
     display:block;
     width:170px;
+    /*position:absolute;*/
+    /*top:40px;*/
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu li ul li{
     color:white;
+    font-family: 'Hanna', sans-serif;
 }
 
 
@@ -124,6 +161,7 @@ div#menu li ul li ul{
     visibility: hidden;
     opacity:0;
     color:white;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu li ul li:hover > ul{
@@ -131,16 +169,19 @@ div#menu li ul li:hover > ul{
     opacity:1;
     position:absolute;
     /*left:168px;*/
-    left:159px;
+    left:170px;
     top:57px;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu li ul li ul li:hover{
-    background:lightcyan;
+    background: #708095;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu li ul li{
     padding:5px;
+    font-family: 'Hanna', sans-serif;
 }
 
 div#menu li ul li ul{
@@ -148,21 +189,27 @@ div#menu li ul li ul{
     vertical-align: middle;
     text-align: center;
     font-weight: bold;
+    font-family: 'Hanna', sans-serif;
 }
 
 /* LINK */
 a:link, a:visited {
     color: #a7aad6;
     text-decoration: none;
+    font-family: 'Hanna', sans-serif;
 }
 
 a:hover {
     text-decoration: underline;
+    font-family: 'Hanna', sans-serif;
 }
 
 /* TABLE */
 table {
     border-collapse: collapse;
+    width:700px;
+    margin: 20px 0px;
+    font-family: 'Hanna', sans-serif;
 }
 
 td, th {
@@ -170,42 +217,47 @@ td, th {
     border-bottom: 1px solid #5e76ee;
     vertical-align: top;
     padding: 5px 15px;
-    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    /*font-family: "Lucida Grande", Verdana, Arial, sans-serif;*/
+    font-family: 'Hanna', sans-serif;
 }
 
+
 table.change-list, table.change-list th, table.change-list td {
+
     border: 1px solid #8686f1;
     padding:5px;
+    font-family: 'Hanna', sans-serif;
 }
 
 table.change-list th{
+
     text-align:center;
     color: #f4f4f4;
     font-size: 16px;
+    font-family: 'Hanna', sans-serif;
 }
 
 table.change-list td, table.change-list td a{
     text-align:center;
     color: #f4f4f4;
+    font-family: 'Hanna', sans-serif;
 }
 
 table.architect, table.architect th, table.architect td {
     border: 1px solid #8686f1;
     padding:5px;
+    font-family: 'Hanna', sans-serif;
 }
 
 table.architect th{
     text-align:center;
     color: #eaeaea;
     font-size: 16px;
+    font-family: 'Hanna', sans-serif;
 }
 
 table.architect td, table.architect td a{
     text-align:center;
     color: #eaeaea;
-}
-
-body {
     font-family: 'Hanna', sans-serif;
-    font-size: 14px;
 }
